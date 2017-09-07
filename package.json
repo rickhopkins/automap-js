@@ -1,0 +1,17 @@
+{
+	"name": "automap-js",
+	"version": "1.0.0",
+	"description": "An automapping utility for javascript objects.",
+	"scripts": {
+		"build": "webpack",
+		"build:prod": "webpack -p --progress"
+	},
+	"author": "Rick Hopkins <rick.hopkins@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.0",
+		"webpack": "^3.5.6"
+	}
+}
