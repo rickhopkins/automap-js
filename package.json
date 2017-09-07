@@ -6,9 +6,15 @@
 		"build": "webpack",
 		"build:prod": "webpack -p --progress"
 	},
+	"main": "index.js",
 	"author": "Rick Hopkins <rick.hopkins@gmail.com>",
 	"license": "MIT",
-	"dependencies": {
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rickhopkins/automap-js.git"
+	},
+	"dependencies": {},
+	"devDependencies": {
 		"babel-core": "^6.26.0",
 		"babel-loader": "^7.1.2",
 		"babel-preset-env": "^1.6.0",

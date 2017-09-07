@@ -3,7 +3,7 @@
  * AutoMap allows mapping of one entity to another
  */
 
-const AutoMap = {
+export const AutoMap = {
 	/**
 	 * Mappings is an array of MapDef objects held in memory
 	 * @type {MapDef[]} An array of MapDef
@@ -223,6 +223,3 @@ const AutoMap = {
 		return destination;
 	}
 };
-
-/** export the AutoMap object */
-export default AutoMap;
