@@ -1,4 +1,4 @@
-import { AutoMap } from '../../';
+import AutoMap from '../../src';
 import { MapKeys } from './map.keys';
 import './mapping';
 import { CarEntity  } from './car.entity';

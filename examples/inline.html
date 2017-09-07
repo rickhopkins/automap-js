@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>AutoMap Examples</title>
+	</head>
+	<body>
+		Testing Inline... Watch the console
+		<script type="text/javascript" src="../src/index.js"></script>
+		<script type="text/javascript">
+			/** hold map keys */
+			var MapKeys = {
+				key1: 'carE=>carM',
+				key2: 'Any1=>Any2'
+			};
+			
+			/** create maps */
+			AutoMap.CreateMap(MapKeys.key1)
+				.forMember('carID').mapFrom('carID')
+				.forMember('make').mapFrom('make')
+				.forMember('model').mapFrom('model')
+				.forMember('year').mapFrom('year');
+			AutoMap.CreateMap(MapKeys.key2)
+				.forMember('test1').mapFrom('test2')
+				.forMember('test2').mapFrom('test3')
+				.forMember('test3').mapFrom('test3').condition((source, destination) => { return true });
+			
+			/** create any objects and test */
+			let any1 = { test1: 'value 1', test2: 'value 2', test3: { key: 'value' } };
+			let any2 = { test1: 'value 1', test2: 'value 2', test3: 'Not Mapped' };
+			let anyMapped = AutoMap.Map(MapKeys.key2, any1, any2);
+			console.log(anyMapped);
+		</script>
+	</body>
+</html>

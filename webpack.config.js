@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
 	entry: './examples/src/index',
 	output: {
-		filename: './examples/build/automap.example.js'
+		filename: './examples/automap.example.js'
 	},
 	module: {
 		loaders: [
