@@ -8,8 +8,6 @@ _npm install automap-js --save_
 
 ### How it works...
 
-AutoMap-JS is built to work 
-
 The simplest way to see how it works is to view the inline.html file under the examples folder. Essentially you call the AutoMap.CreateMap to define a mapping between a source entity and a destination entity, giving it a unique string key to represent the mapping. The .forMember function defines which the member / property on the destination entity, and the .mapFrom method defines the source member / property to pull the value from. So you're defining "for this destination entity property, pull it's value from this source entity property". You can however get more complex with your mapping and use the .value, .condition, .ignore. See the examples and documentation below for more information.
 
 ### Example (inline)
