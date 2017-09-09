@@ -1,6 +1,6 @@
 {
 	"name": "automap-js",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "An automapping utility for javascript objects.",
 	"scripts": {
 		"build": "webpack",
